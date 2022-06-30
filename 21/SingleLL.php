@@ -1,14 +1,6 @@
 <?php
-class LinkNode
-{
-  public $data;
-  public $next;
-  public  function __construct($data)
-  {
-    $this->data = $data;
-    $this->next = NULL;
-  }
-}
+require './21/LinkNode.php';
+
 class SingleLL
 {
   public $head;
@@ -66,5 +58,3 @@ class SingleLL
     printf("%s\n", $sll->isLoop() ? 1 : 0);
   }
 }
-
-SingleLL::main(array());
